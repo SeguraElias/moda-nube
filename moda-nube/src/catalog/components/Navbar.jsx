@@ -62,7 +62,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div className="center-nav">
-        <img src={logoModaNube} alt="" />
+        <img className="logo-nav" src={logoModaNube} alt="Logo ModaNube" />
       </div>
       <div className="nav-right">  
         <div className="icon-container" onMouseEnter={toggleLogin} onMouseLeave={toggleLogin}>
