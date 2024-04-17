@@ -6,6 +6,7 @@ export const searchProducts = async (term) => {
   try {
     const response = await axios.get(`${BASE_URL}/products?search=${term}`);
     return response.data;
+    
   } catch (error) {
     console.error('Error searching products:', error);
     return [];
