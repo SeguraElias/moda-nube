@@ -1,0 +1,69 @@
+.login-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/images/fashion.jpg');
+  background-size: cover;
+  background-position: top left;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-1 {
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 26px 0 rgba(128, 0, 128, 0.5);
+  padding: 5%;
+  width: 500px;
+  max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+}
+
+.login-form-1 h2,
+.login-form-1 p {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;  
+}
+
+.btnSubmit {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #0062cc;
+}
+
+.btnSubmit:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .login-form-1 {
+    width: 80%;
+  }
+}
+
+
+/* @media screen and (max-width: 100vw) {
+  .login-form-1 {
+    width: 50%; }
+  } */

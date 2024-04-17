@@ -1,0 +1,9 @@
+.home-container {
+  background-color:#a67d5c;
+  position: relative;
+  height: 120vh; 
+  background-image: url('../../assets/images/colletion.png');
+  background-size: 800px; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
