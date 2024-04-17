@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Navbar.css';
 import { searchProducts } from '../../helpers/api';
 import { Login } from '../../auth'
+import logoModaNube from '../../assets/images/logo-text.png'
 
 
 export const Navbar = () => {
@@ -60,7 +61,9 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-     
+      <div className="center-nav">
+        <img src={logoModaNube} alt="" />
+      </div>
       <div className="nav-right">  
         <div className="icon-container" onMouseEnter={toggleLogin} onMouseLeave={toggleLogin}>
           <i className="fas fa-user icon"></i>
