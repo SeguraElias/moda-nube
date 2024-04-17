@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { searchProducts } from '../../helpers/api.js'; // Importa la función searchProducts desde api.js
 import './products.css'
+import {  AddToCartIcon } from '../../catalog/components/Icons.jsx'
 
 export const Products = () => {
   const [products, setProductos] = useState([]); // Estado para almacenar los productos
@@ -21,14 +22,17 @@ export const Products = () => {
   return (
 
     <div>
-        <h1 className='title-css'>Nuestros productos</h1>
-        <div className="container-css">
+        <h1 className='title-products'>Nuestros productos</h1>
+        <div className="container-products">
             {products.map(producto => (
-            <div className="card-css" key={producto.id}>
-                <img className="card-img-css" src={producto.image} alt={producto.title} />
-                <div className="card-body-css">
-                    <h5 className="card-title-css">{producto.title}</h5>
-                    <p className="card-text-css">US${producto.price}</p>
+            <div className="card-products" key={producto.id}>
+                <img className="card-img-products" src={producto.image} alt={producto.title} />
+                <div className="card-body-products">
+                    <h5 className="card-title-products">{producto.title}</h5>
+                    <div className="card-container-icon">
+                      <p className="card-text-products">US${producto.price} </p> 
+                      <span className='card-icon'> <AddToCartIcon /></span>
+                    </div>
                 </div>
             </div>
             ))}

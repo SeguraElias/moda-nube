@@ -23,7 +23,7 @@ export const AppRouter = () => {
         <Route path="/auth/login" element={<Login onLogin={handleLogin} />} /> 
         <Route path="*" element={<Navigate to="/auth/login" />} />
       </Routes>
-      {window.location.pathname !== '/auth/login' && <Footer />}
+      {window.location.pathname !== '/auth/login'}
     </>
   );
 };
