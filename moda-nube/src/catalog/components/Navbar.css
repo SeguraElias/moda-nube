@@ -3,12 +3,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: #fefefe;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  
 }
 
 .nav-left {
   display: flex;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center; 
+}
+
+.center-nav img{
+  width: 256px;
 }
 
 .dropdown {
@@ -46,12 +56,6 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  margin-left: auto; 
 }
 
 .logo-container {

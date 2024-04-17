@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Navbar.css';
 import { searchProducts } from '../../helpers/api';
 import { Login } from '../../auth'
+import logoModaNube from '../../assets/images/logo-txt.png'
 
 
 export const Navbar = () => {
@@ -59,6 +60,10 @@ export const Navbar = () => {
             <a href="#">Submenú 3</a>
           </div>
         </div>
+      </div>
+
+      <div className="center-nav">
+        <img className="logo-nav" src={logoModaNube} alt="Logo ModaNube" />
       </div>
      
       <div className="nav-right">  
