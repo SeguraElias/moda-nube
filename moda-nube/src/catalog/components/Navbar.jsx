@@ -3,7 +3,11 @@ import { useState } from 'react';
 import './Navbar.css';
 import { searchProducts } from '../../helpers/api';
 import { Login } from '../../auth'
+<<<<<<< HEAD
 import logoModaNube from '../../assets/images/logo-text.png'
+=======
+import logoModaNube from '../../assets/images/logo-txt.png'
+>>>>>>> 6e30f55e08d0a6a63fd9b24490627032bd534116
 
 
 export const Navbar = () => {
@@ -61,9 +65,17 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="center-nav">
         <img className="logo-nav" src={logoModaNube} alt="Logo ModaNube" />
       </div>
+=======
+
+      <div className="center-nav">
+        <img className="logo-nav" src={logoModaNube} alt="Logo ModaNube" />
+      </div>
+     
+>>>>>>> 6e30f55e08d0a6a63fd9b24490627032bd534116
       <div className="nav-right">  
         <div className="icon-container" onMouseEnter={toggleLogin} onMouseLeave={toggleLogin}>
           <i className="fas fa-user icon"></i>
