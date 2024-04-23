@@ -20,10 +20,10 @@ export const Home = () => {
   }, [galleryImages.length]);
 
   return (
-    <div className="home-container padding-sm ">
+    <div className="home-container padding-sm">
       <h1 className="catalogue-title">CATÁLOGO</h1>
-      <div className="images-container">
-        <img className="casual-image" src={galleryImages[currentImageIndex]} alt="Imagen" />
+      <div className="images-container container-fluid">
+        <img className="casual-image img-fluid" src={galleryImages[currentImageIndex]} alt="Imagen" />
       </div>
       <div className="content-container blur-effect">
         <div className='blurry-background'></div>
