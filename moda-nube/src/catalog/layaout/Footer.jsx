@@ -3,7 +3,7 @@ import './Footer.css';
 export const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="container container-fluid">
         <div className="footer-section">
           <h4>Información de Catálogo</h4>
           <ul>
@@ -26,8 +26,8 @@ export const Footer = () => {
           <h4>Suscripción al boletín</h4>
           <p>Suscríbete a nuestro boletín para recibir noticias y promociones.</p> 
           <form>
-            <input type="email" placeholder="Correo electrónico" />
-            <button type="submit">Suscribirse</button>
+            <input className='form-control' type="email" placeholder="Correo electrónico" />
+            <button className='btn btn-primary' type="submit">Suscribirse</button>
           </form>
         </div>
       </div>
