@@ -1,0 +1,64 @@
+.home-container {
+  display: flex;
+  background-image: url('../../assets/images/fondo.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 160px;
+  padding-bottom: 50px;
+}
+
+.footer-space {
+  height: 100px; /* Altura del espacio para el footer */
+}
+
+.catalogue-title {
+  font-family: "Didot";
+  font-size: 100px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.casual-image, .colection-image {
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  float: left;
+}
+
+.home-title {
+  font-family: Didot;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-paragraph {
+  font-family: Aptos Mono;
+  text-align: center;
+  /* font-weight: bold; */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.colection-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+@media (max-width: 959px) {
+  .padding-sm {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
