@@ -20,7 +20,7 @@ export const Home = () => {
   }, [galleryImages.length]);
 
   return (
-    <div className="home-container padding-sm">
+    <div className="home-container padding-sm ">
       <h1 className="catalogue-title">CATÁLOGO</h1>
       <div className="images-container">
         <img className="casual-image" src={galleryImages[currentImageIndex]} alt="Imagen" />
