@@ -41,7 +41,7 @@ export const Products = () => {
 
   return (
     <div className="body-container container-fluid">
-      <h1 className="title-products">NUEVA COLECCIÓN</h1>
+        <h1 className="title-products col-lg-12 col-sm-12">NUEVA COLECCIÓN</h1>
       <div className="container-products">
           {products.map((product) => (
             <div
