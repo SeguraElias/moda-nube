@@ -1,20 +1,23 @@
-import { BrowserRouter } from 'react-router-dom';
-import { AppRouter } from './router/AppRouter';
-// import { Footer } from './components/layout/Footer';
-import { Footer, Header } from './catalog';
-import { Products } from './catalog/layouts/Products.jsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Footer } from './catalog/layaout/Footer';
+import { Navbar } from './catalog/components/Navbar';
+import { Home } from './catalog/pages/Home';
+import { Header } from './catalog/layaout/Header';
+import { Products } from './catalog/layaout/Products';
 
 
 export const CatalogApp = () => {
-  return (
+  return (    
     <BrowserRouter>
-      <div className="app-container">
-        <Header />
-        <AppRouter />
-        <Products />
-        <Footer />
-
-      </div>
+      <Header />
+        <Navbar />
+          <Routes>
+            <Route path='/products' element={<Products />}/>
+            <Route path='*' element={<Home />}/>
+          </Routes>
+      <Footer />
     </BrowserRouter>
-  );
+  ); 
 };
+
+

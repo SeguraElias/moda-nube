@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './style.css'
 import { CatalogApp } from './CatalogApp'
+import { store } from './redux/store'
+import { Provider } from 'react-redux'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <CatalogApp />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <CatalogApp/>
+    </React.StrictMode>
+  </Provider>
 )

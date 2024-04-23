@@ -1,0 +1,74 @@
+.footer {
+  background-color: #EADBC8;
+  padding: 5px 0; 
+  
+}
+h4{
+  color: #000;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px; /* agregamos */
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h4 {
+  font-size: 14px; 
+  margin-bottom: 8px; 
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px; 
+}
+
+.footer-section ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px; 
+}
+
+.footer-section ul li a:hover {
+  color: #000;
+}
+
+.footer-section p {
+  color: #000;
+  margin-bottom: 8px; 
+  font-size: 14px; 
+}
+
+.footer-section form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section input[type="email"] {
+  padding: 3px; 
+  border: 1px solid #ffffff;
+  border-radius: 3px; 
+  margin-right: 8px; 
+}
+
+.footer-section button[type="submit"] {
+  padding: 3px 5px; 
+  background-color: #0062cc;
+  color: #fff;
+  border: none;
+  border-radius: 3px; 
+  cursor: pointer;
+}
+
+.footer-section button[type="submit"]:hover {
+  background-color: #0056b3;
+}
