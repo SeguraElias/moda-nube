@@ -1,18 +1,10 @@
-import { formToJSON } from 'axios'
-
-// export components
+//exportamos los componentes
 export * from './components/Navbar'
-export * from './components/ProductCard'
-export * from './components/SearchForm'
 
-// export layouts
-export * from './layouts/Favorites'
-export * from './layouts/Footer'
-export * from './layouts/Header'
-export * from './layouts/ShoppingCart'
-export * from './layouts/Products'
+//exportamos los layout
+export * from './layaout/Footer'
+export * from './layaout/Header'
+export * from './layaout/Products'
 
-
-// export pages
+//exportamos pages
 export * from './pages/Home'
-export * from './pages/ProductDetail'
