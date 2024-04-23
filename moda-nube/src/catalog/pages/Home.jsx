@@ -25,7 +25,8 @@ export const Home = () => {
       <div className="images-container">
         <img className="casual-image" src={galleryImages[currentImageIndex]} alt="Imagen" />
       </div>
-      <div className="content-container">
+      <div className="content-container blur-effect">
+        <div className='blurry-background'></div>
         <h1 className="home-title">¡Bienvenido a nuestro Catálogo virtual!</h1>
         <h5 className="home-paragraph">
           Sumérgete en la Ola Coreana y luce como toda una estrella del K-Pop<br/>que presenta las últimas tendencias en moda, como tops, pantalones harén y más.<br/>Nuestras marcas de moda coreana para mujer están inspiradas en un sinfín de estilos<br/> que van desde el clásico, de diseñador, street fashion y tradicional hanbok para crear<br/> prendas versátiles con diseños elegantes, femeninos, urbanos o deportivos.<br/>ModaNube es el lugar idóneo para comprar moda coreana online si lo que estás<br/>buscando es un look casual o de diva. ¡Aquí podrás encontrar prendas únicas que <br/> permiten crear los mejores outfits coreanos que recrean el glamour de tus estrellas!

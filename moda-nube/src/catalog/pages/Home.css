@@ -62,3 +62,17 @@
     padding-right: 8px;
   }
 }
+
+
+
+.content-container{
+ 
+  background-color: #fff; /* Color de fondo de la tarjeta */
+  border-radius: 1rem; /* Bordes redondeados */
+  padding: 10px;
+}
+
+.blur-effect{
+  background: #fafafa20;
+  backdrop-filter: blur(0.4rem);
+}
