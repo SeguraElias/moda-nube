@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { searchProducts } from '../../helpers/api.js';
 import './Products.css';
+import { getAllProducts } from '../../services/productService.js';
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
@@ -10,7 +10,7 @@ export const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const productsResponse = await searchProducts('');
+        const productsResponse = await getAllProducts()
         setProducts(productsResponse);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -49,7 +49,7 @@ export const Products = () => {
               key={product.id}
               onClick={() => handleCardClick(product.id)}
             >
-              <img className="card-img-products " src={product.image} alt={product.title} />
+              <img className="card-img-products img-fluid" src={product.image} alt={product.title} />
               <div className="card-body-products">
                 <h5 className="card-title-products">{product.title}</h5>
                 {expandedProductId === product.id && (

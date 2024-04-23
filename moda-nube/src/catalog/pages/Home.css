@@ -17,7 +17,7 @@
 
 .catalogue-title {
   font-family: "Didot";
-  font-size: 100px;
+  font-size: 80px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -31,7 +31,7 @@
 .images-container {
   display: flex;
   justify-content: center;
-  width: 800px;
+  width: 90%;
   float: left;
 }
 
@@ -52,7 +52,6 @@
 }
 
 .colection-container {
-  display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
