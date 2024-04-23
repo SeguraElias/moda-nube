@@ -20,7 +20,7 @@
   border-radius: 10px;
   height: 250px;
   cursor: pointer;
-  transition: all 0.3s ease;
+
 }
 
 .card-products.expanded {
@@ -56,9 +56,6 @@
   font-family: "Didot";
   font-size: 70px;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  margin: 30px;
 }
 
 .card-text-products {
@@ -88,4 +85,23 @@
 
 .heart-icon:hover {
   color: red;
+}
+
+@media (max-width: 992px) {
+  .card-products {
+      width: calc(25% - 20px); /* cuatro tarjetas por fila */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-products {
+      width: calc(40% - 20px); /* Dos tarjetas por fila */
+  }
+}
+
+@media (max-width: 576px) {
+  .card-products {
+      width: calc(50% - 10px); /* Una tarjeta por fila */
+  }
+  
 }
