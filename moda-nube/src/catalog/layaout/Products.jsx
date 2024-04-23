@@ -40,13 +40,12 @@ export const Products = () => {
   };
 
   return (
-    <div className="body-container">
+    <div className="body-container container-fluid">
       <h1 className="title-products">NUEVA COLECCIÓN</h1>
       <div className="container-products">
-        <div className="row">
           {products.map((product) => (
             <div
-              className={`card-products col-md-3 col-sm-12 ${expandedProductId === product.id ? 'expanded' : ''}`}
+              className={`card-products ${expandedProductId === product.id ? 'expanded' : ''}`}
               key={product.id}
               onClick={() => handleCardClick(product.id)}
             >
@@ -66,7 +65,6 @@ export const Products = () => {
               </div>
             </div>
           ))}
-        </div>
       </div>
     </div>
   );
