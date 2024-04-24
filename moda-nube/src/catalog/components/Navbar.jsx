@@ -29,11 +29,15 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <img className="logo-nav img-fluid" src={logoModaNube} alt="Logo ModaNube" />
+        <div className='pe-5'>
+          <img className="logo-nav img-fluid" src={logoModaNube} alt="Logo ModaNube" />
+          <i className="fas fa-cloud"></i>
+         
+        </div>
       
         <div className="nav-right">  
-          <div className="icon-container me-4" onClick={toggleSearch}>
-            <i className="fas fa-cloud"></i>
+          <div className="icon-container me-5" onClick={toggleSearch}>
+            
           </div>
         </div>
       </div>
