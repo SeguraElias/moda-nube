@@ -15,6 +15,7 @@ body{
   width: 100%; 
   background-color: #ffffff; 
   top: 20px; 
+  z-index: 1001;
 }
 
 .catalogo{

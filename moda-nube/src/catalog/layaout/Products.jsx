@@ -40,10 +40,10 @@ export const Products = () => {
   };
 
   return (
-    <div className="body-container container-fluid">
-      <h1 className="title-products">NUEVA COLECCIÓN</h1>
-      <div className="container-products">
-          {products.map((product) => (
+    <div className="body-container ">
+        <h1 className="title-products">NUEVA COLECCIÓN</h1>
+      <div className="container-products container fluid">
+        {products.map((product) => (
             <div
               className={`card-products ${expandedProductId === product.id ? 'expanded' : ''}`}
               key={product.id}
@@ -64,7 +64,7 @@ export const Products = () => {
                 </div>
               </div>
             </div>
-          ))}
+          ))}          
       </div>
     </div>
   );
